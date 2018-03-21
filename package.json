@@ -4,18 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "start-dev": "webpack -w & nodemon -w index.js"
+    "start-dev": "webpack --mode development -w & nodemon -w index.js"
   },
   "author": "Mimi Scott",
   "license": "ISC",
   "dependencies": {
+    "css-loader": "^0.28.11",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^4.4.9",
     "react-router-dom": "^4.2.2",
-    "serve-static": "^1.13.2"
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "serve-static": "^1.13.2",
+    "style-loader": "^0.20.3"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
