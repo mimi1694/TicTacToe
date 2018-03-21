@@ -1,9 +1,9 @@
 const http = require('http')
 const finalhandler = require('finalhandler')
-const serveStatic = require('serve-static')
+const servestatic = require('serve-static')
 const PORT = process.env.PORT || 8080 
 
-const serve = serveStatic('./public')
+const serve = servestatic('./public')
 
 const server = http.createServer((req, res) => {
   let done = finalhandler(req, res)
